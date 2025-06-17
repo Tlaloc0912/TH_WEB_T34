@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8fa;
+            color: black;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 10px 10px 5px lightblue;
+        }
+        
+        .header h1 {
+            margin: 10px 0 5px 0;
+            font-size: 2.5em;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            color: black;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px lightblue;
+            overflow: hidden;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 10px 10px 5px lightblue;
+        }
+        
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .project-card-content {
+            padding: 20px;
+        }
+        
+        .project-card h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <img src="../img/cat1.jpg" alt="Ảnh đại diện của bạn">
+            <h1>Aalis Elfleda</h1>
+            <p>Người dịch điên dịch khùng</p>
+        </header>
+
+        <main>
+            <h2>Dự Án Nổi Bật</h2>
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <img src="../img/Proj1.jfif" alt="">
+                    <div class="project-card-content">
+                        <h3>The Devil in Me</h3>
+                        <p>The Devil in Me là câu chuyện kể về nhóm bạn vô tình lạc lên hòn đảo của gã sát nhân hàng loạt và bị truy sát để thỏa mãn thú vui của gã.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="../img/Proj2.jpg" alt="">
+                    <div class="project-card-content">
+                        <h3>As Dusk Falls</h3>
+                        <p>As Dusk Falls là một câu chuyện đa thế hệ, nơi những quyết định của bạn sẽ định hình số phận của hai gia đình.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="../img/Proj3.jpg" alt="">
+                    <div class="project-card-content">
+                        <h3>Still Wakes The Deep</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+</body>
+
+</html>
